@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=DM+Sans&family=Inter:wght@100;200&family=Montserrat:wght@200&family=Overpass:wght@100&family=Playfair+Display&family=Ramaraja&family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=DM+Sans&family=Inter:wght@100;200&family=Montserrat:wght@200&family=Overpass:wght@100&family=Playfair+Display&family=Ramaraja&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 55px;
+    background-color: black;
+    color: wheat;
+    align-items: center;
+    
+}
+.brand img{
+    width: 44px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 40px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+nav ul li:hover{
+    color: cornflowerblue;
+}
+.container{
+    display: flex;
+    margin: 20px auto;
+    width: 75%;
+    border-radius: 12px;
+    padding: 12px;
+    min-height: 72vh;
+    background-color: black;
+    color: wheat;
+    background-image: url('bg.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+#myprogressbar{
+    width: 80vw ;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 12px;
+}
+.icons i{
+    cursor: pointer;
+    margin: 0 4px;
+}
+.songitem{
+    display: flex;
+    height: 34px;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 38px;
+
+}
+.songitem img{
+    width: 40px;
+    height: 30px;
+    margin:0 18px ;
+    border-radius: 20px;
+}
+.timespan{
+    margin: 0 15px;
+}
+.songitemcontainer{
+    margin-top: 40px;
+    overflow-y: auto;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity .4s ease-in;
+ width: 80px;
+ height: 16px;
+}
+.songinfo{
+    position: absolute;
+     left: 9.6vw;
+}
+#innerSongName{
+    margin-left: 10px;
+}
+
+@media  (min-width:501px) and (max-width:1200px){
+    .songlist{
+        width: 40vw
+    }
+    .songlist h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
+}
+@media (max-width:500px ) {
+    .bottom{
+        width: 119vw;
+    
+    }
+    nav{
+        width: 119vw
+        
+    }
+    .container{
+        margin-left: 16px;
+        width: 100vw;
+       
+    }
+    .songlist{
+        width: 70vw
+    }
+    .songlist h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .songinfo {
+        left: 1.6vw;
+    }
+
+nav ul li {
+    padding: 0px 28px;
+}
+}
